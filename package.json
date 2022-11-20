@@ -4,9 +4,9 @@
   "private": true,
   "main": "server.ts",
   "scripts": {
-    "dev": "npx tensei serve --watch",
+    "start": "npx tensei serve --watch",
     "build": "npx tensei build --production",
-    "start": "node build/server.js",
+    "startto": "node build/server.js",
     "postinstall": "tensei orm:types"
   },
   "devDependencies": {
