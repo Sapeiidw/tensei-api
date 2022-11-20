@@ -21,15 +21,15 @@ import { media, file, files } from "@tensei/media";
 import { smtp } from "@tensei/mail";
 export default tensei()
   .root(__dirname)
-  .databaseConfig({
-    type: "postgresql", // or postgresql / sqlite / mongodb /mysql
-    host: "ec2-3-227-68-43.compute-1.amazonaws.com",
-    dbName: "d85r1rhffdbgod",
-    user: "nseqipepuigxqy",
-    port: 5432,
-    password:
-      "0ee7c11cbbe4023b241f88442a000fcdd7da8d3080921855108975b3d4849164",
-  })
+  // .databaseConfig({
+  //   type: "postgresql", // or postgresql / sqlite / mongodb /mysql
+  //   // host: "ec2-3-227-68-43.compute-1.amazonaws.com",
+  //   dbName: "d85r1rhffdbgod",
+  //   user: "nseqipepuigxqy",
+  //   port: 5432,
+  //   password:
+  //     "0ee7c11cbbe4023b241f88442a000fcdd7da8d3080921855108975b3d4849164",
+  // })
   .mailer("transactional")
   .plugins([
     media().plugin(),
